@@ -1,0 +1,29 @@
+area:
+1 - GUI
+2 - Logic
+
+severity : s
+1 - critical (current features depend on it)
+2 - must have (listed feature)
+3 - in some cases can lead to errors
+4 - GUI improvement,
+5 - feature for next version
+
+
+                  add possibility to set: s5
+2.01 - left-right deviation from exact coordinates to turn player's tank
++      Oct.07   2.02 - speed of vehicles
+2.03 - enemy vehicle modes: 1) random path 2) looking for player's tank.
+
++      Oct.07   2.04 2 - max enemies count
++      Oct.07   2.05 2 - average time to create new enemy
+2.06 2 - add posibility to move one pixel on  Ctrl + arrow press
++      Oct.09   2.07 2 - add numbers of street's width in settings dialog
+
+// /////////////////////
+BUGS
+
+1.01 4 left black margin between tank and wall is different in up and down movements
+X      Oct.09  1.02 2 Workspace does not reduced its size after increasing. It does not read
+       new slider value.
+

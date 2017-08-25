@@ -1,0 +1,6 @@
+ Here are listed dependencies/references in code
+
+They serve as reminders: where is used some definitions, numbers.
+Where to change dependent code appropriately.
+
+//:r1 count of CommonPixId constants //includes.h workspace.h
