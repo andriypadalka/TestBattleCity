@@ -2,6 +2,11 @@
 #define SETTINGS_H
 
 #include "Enums.h"
+// default settings
+#define DEFAULT_TANK_VELOCITY 5
+#define DEFAULT_SHELL_VELOCITY 10
+#define DEFAULT_MAX_ENEMYS_COUNT 5
+#define DEFAULT_NEW_ENEMY_AFTER_SEC 60
 
 struct Settings
 {
