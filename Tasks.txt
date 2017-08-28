@@ -1,3 +1,13 @@
+Description:
+By default game starts from Level 1. From menu user can choose other level to start from. So abstract base class
+BaseLevel - contains interface.
+   SignalReceived      - fuction serve to receive signal from several sources: keyboard, timer, network.
+   GetArrayOfObstacles - will return list of all objects on the way of tank or shell (for detecting collision).
+   Paint               - every level has its own workspace (picture) 
+BaseObstacle - every object on the picture can be viewed as obstacle. Its states are ObstaclesStates.
+
+///////////////////////////////////////////////////////////////////   
+   
 area:
 1 - GUI
 2 - Logic
