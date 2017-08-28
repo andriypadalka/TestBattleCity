@@ -1,10 +1,16 @@
 Description:
-By default game starts from Level 1. From menu user can choose other level to start from. So abstract base class
-BaseLevel - contains interface.
-   SignalReceived      - fuction serve to receive signal from several sources: keyboard, timer, network.
+By default game starts from Level 1. From menu user can choose other level to start from. After choosing menu Play,
+user can move his/her tank with arrow keys.
+BaseLevel - contains interface of possible levels.
+   SignalReceived      - fuction serves to receive signal from several sources: keyboard, timer, network.
    GetArrayOfObstacles - will return list of all objects on the way of tank or shell (for detecting collision).
-   Paint               - every level has its own workspace (picture) 
-BaseObstacle - every object on the picture can be viewed as obstacle. Its states are ObstaclesStates.
+   Paint               - every level will have its own picture on workspace. 
+   LevelOne::Paint(QPainter & painterW)  - First of all it draws all image in memory. Then this image will draw
+                              painterW - painter from Workspace.
+BaseObstacle - every object on the picture can be viewed as an obstacle. Its states are defined in ObstaclesStates.
+Each move of the tank lead to check - if it collided with something or not.
+template class ObstContainer - to store and redraw each alive object, trace theyr lifecycle 
+                               and to control quantity of them.
 
 ///////////////////////////////////////////////////////////////////   
    
