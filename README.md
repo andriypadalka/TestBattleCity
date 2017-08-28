@@ -5,3 +5,5 @@ software company (and successfully done). It is an attempt to implement some fun
 BattleCity game: https://www.youtube.com/watch?v=MPsA5PtfdL0&t=132s (at least its firt level).
 But while studying this game from youtube I decided to add ability to choose level, set velocity
 of tanks and shells, streets width, how fast enemy tanks will appeare and max count of them.
+A description of this program's architecture is in Tasks.h file.
+(Untill now not all functionalities was fulfilled, but I hope I'll find some late evenings to implement them. :-)
