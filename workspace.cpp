@@ -4,12 +4,11 @@
 
 
 WorkSpace::WorkSpace(QWidget *parent) :
-    QWidget(parent), m_pCurLevel(0), m_pTimer(0)
-{          
-    m_Settings = new Settings(L1, STREET_MARGIN, DEFAULT_TANK_VELOCITY,
-                 DEFAULT_SHELL_VELOCITY, DEFAULT_MAX_ENEMYS_COUNT,
-                 DEFAULT_NEW_ENEMY_AFTER_SEC);  // try/catch is in mainwindow constructor
-    
+    QWidget(parent), m_pCurLevel(0), m_pTimer(0),
+    m_Settings(new Settings(L1, STREET_MARGIN, DEFAULT_TANK_VELOCITY,
+                             DEFAULT_SHELL_VELOCITY, DEFAULT_MAX_ENEMYS_COUNT,
+                             DEFAULT_NEW_ENEMY_AFTER_SEC))                     // try/catch is in mainwindow constructor
+{   
     BaseObstacle::SetWorkSpace(this);
 }
 WorkSpace::~WorkSpace()
